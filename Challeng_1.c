@@ -7,9 +7,7 @@ int main()
 
         printf("Entrez un nombre NB :\n");
         scanf("%d",&NB);
-
         i = 1;
-        
         while(i<= 10)
         {
             printf("%d\n",NB*i);
