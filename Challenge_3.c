@@ -1,24 +1,27 @@
 #include <stdio.h>
-#include <stdlib.h>
+
 int main()
 {
-    int NB;
+	 int NB;
     int i;
     int Temp;
     
+
     printf("Donner un nombre :\n");
     scanf("%d",&NB);
-    
-    
-    if (NB==1 || NB==0)
-    Temp=1;
+   
     for (i=2;i<NB;i++)
     {
+    	Temp=1;
        if(NB%i!=0)
        Temp=0;
        
        else
-       Temp=1;
+       {
+       		Temp=1;
+       break;
+	   }
+       
     }
     
     if(Temp==0)
@@ -28,5 +31,6 @@ int main()
         printf("ce nombre est no premier ");
     
        
-  return 0;
+
+	return 0;
 }
